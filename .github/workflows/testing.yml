@@ -9,7 +9,7 @@ jobs:
       matrix:
         python-version: [3.11, 3.12, 3.13]
         sqlalchemy-version: [ 1.4 ]
-        django-version: [ 4.2 ]
+        django-version: [ 4.2, 5.2 ]
     name: Test Py ${{ matrix.python-version }}, SQLA ${{ matrix.sqlalchemy-version }}, Django ${{ matrix.django-version }}
     steps:
     - uses: actions/checkout@v3
