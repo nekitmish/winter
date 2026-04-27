@@ -3,7 +3,7 @@ from typing import List
 from typing import TYPE_CHECKING
 from typing import Tuple
 
-from openapi_pydantic import Parameter
+from openapi_pydantic.v3.v3_0 import Parameter
 
 from winter.core import ComponentMethodArgument
 from winter.web.query_parameters import QueryParameter
