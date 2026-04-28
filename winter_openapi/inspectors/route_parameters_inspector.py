@@ -26,6 +26,7 @@ def register_route_parameters_inspector(inspector: RouteParametersInspector):
 
     if inspector.__class__ in inspector_classes:
         logging.warning(f'{inspector.__class__.__name__} already registered')
+        return
 
     _route_parameters_inspectors.append(inspector)
 
